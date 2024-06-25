@@ -1,0 +1,10 @@
+.vehicle-details-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-top: 75px; /* Adjust based on your navbar height */
+    flex: 1;
+  }

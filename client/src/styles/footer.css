@@ -1,0 +1,41 @@
+.footer {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  flex-shrink: 0;
+  position: relative; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+  text-align: right;
+}
+
+.right-side a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+@media (max-width: 650px) {
+  .footer-content {
+    font-size: 12px;
+  }
+
+  .right-side {
+    flex: none;
+  }
+}

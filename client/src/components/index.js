@@ -1,12 +1,9 @@
-import NavigationComponent from "./layout/NavigationComponent";
-
 import LandingPageComponent from "./LandingPageComponent";
+import VehicleDetailsPage from "./VehicleDetailsPage";
 
 
 
 export { 
-    
-    NavigationComponent,
-
     LandingPageComponent,
+    VehicleDetailsPage
 }
