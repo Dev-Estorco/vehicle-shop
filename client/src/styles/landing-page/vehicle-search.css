@@ -1,0 +1,133 @@
+/* .search-vehicle-container {
+    background-color: #f0f0f0af;
+    border-radius: 15px;
+    padding: 20px;
+  }
+   */
+  .search-content {
+    background-color: #b7b2b29c;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+  .vehicle-type-buttons {
+    display: flex;
+    margin: 8px 10px;
+  }
+  
+  .vehicle-type-btn {
+    border-radius: 25px;
+    padding: 0 20px;
+    height: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vehicle-type-btn:last-child {
+    margin-right: 0;
+  }
+  
+  .vehicle-type-btn.selected {
+    background-color: #ff0000;
+    color: white;
+    border-color: #ff0000;
+  }
+  
+  .vehicle-type-btn:not(.selected) {
+    background-color: white;
+    color: black;
+    border-color: #d9d9d9;
+  }
+  
+  .vehicle-type-btn:not(.selected):hover {
+    background-color: #ff0000;
+    color: white;
+    border-color: #ff0000;
+  }
+  
+  .search-controls {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 15px;
+    flex-wrap: wrap; 
+
+  }
+  
+
+  .condition-filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .condition-buttons {
+    display: flex;
+  }
+  
+  .condition-btn {
+    border-radius: 25px;
+    padding: 0 15px;
+    height: 32px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-color: #d9d9d9;
+  }
+  
+  .condition-btn:last-child {
+    margin-right: 0;
+  }
+  
+  .condition-btn.selected {
+    background-color: #ff0000;
+    color: white;
+    border-color: #ff0000;
+  }
+  
+  .condition-btn:not(.selected):hover {
+    background-color: #ff0000;
+    color: white;
+    border-color: #ff0000;
+  }
+  
+
+
+  .search-select {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .total-matches-btn {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    border-radius: 25px;
+    height: 40px;
+    font-weight: bold;
+  }
+  
+  .total-matches-btn:hover,
+  .total-matches-btn:focus {
+    background-color: #d90000;
+    border-color: #d90000;
+  }
+  
+  /* Adjust the Select component styles */
+  .ant-select-selector {
+    border-radius: 20px !important;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ant-select-selection-item {
+    line-height: 38px !important;
+  }

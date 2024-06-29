@@ -1,0 +1,77 @@
+.home-page {
+  position: relative;
+}
+
+.search-container {
+  position: absolute;
+  bottom: -30px; /* Adjust to control overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Adjust as needed */
+  max-width: 1200px; /* Adjust as needed */
+}
+
+.content {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.banner {
+  background-image: url("../../assets/images/bannerBackground.jpg");
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.564);
+}
+
+.banner-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -70px;
+}
+
+.banner-content .banner-text {
+  color: rgb(249, 249, 249);
+}
+
+.banner-content .banner-text3 {
+  color: rgb(249, 249, 249);
+  padding-bottom: 30px;
+}
+
+.banner-content h1.ant-typography {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content h3.ant-typography {
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-content h1.ant-typography {
+    font-size: 2.5rem;
+  }
+
+  .banner-content h3.ant-typography {
+    font-size: 1.2rem;
+  }
+}

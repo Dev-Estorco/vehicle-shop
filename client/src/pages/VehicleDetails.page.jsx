@@ -1,10 +1,8 @@
 import React from "react";
-import { VehicleDetailsPage } from "../components";
+import { VehicleDetailsComponent } from "../components";
 
+const VehicleDetailsPage = () => {
+  return <VehicleDetailsComponent />;
+};
 
-const VehicleDetails = () =>{
-    return <VehicleDetailsPage/>
-}
-
-
-export default VehicleDetails;
+export default VehicleDetailsPage;

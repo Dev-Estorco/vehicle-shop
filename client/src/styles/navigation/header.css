@@ -1,0 +1,133 @@
+/* Header.jsx */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+  line-height: 40px;
+  align-items: center;
+  background-color: white;
+  padding: 0 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  line-height: 40px;
+}
+
+.header-container .logo img {
+  height: 60px;
+  margin-top: 12px;
+}
+
+
+/* HeaderMenu.jsx */
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  border-bottom: none;
+
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu {
+  border-bottom: none !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 15px;
+  top: 0;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  display: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu-title {
+  padding: 0 10px;
+  font-weight: 500;
+  border-radius: 18px;
+  transition: all 0.2s ease;
+}
+
+
+.ant-menu-horizontal > .ant-menu-item a,
+.ant-menu-horizontal > .ant-menu-submenu-title span,
+.ant-dropdown-link {
+  color: #8C9094;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+.ant-menu-horizontal > .ant-menu-item .login{
+  color: rgb(255, 255, 255);
+  background-color: #D90000;
+  padding: 10px 30px;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-item-open,
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected {
+  background-color: transparent;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover a,
+.ant-menu-horizontal > .ant-menu-item-selected a,
+.ant-menu-horizontal > .ant-menu-item:hover .ant-dropdown-link,
+.ant-menu-horizontal > .ant-menu-item-selected .ant-dropdown-link,
+.ant-menu-horizontal > .ant-menu-submenu:hover .ant-dropdown-link,
+.ant-menu-horizontal > .ant-menu-submenu-selected .ant-dropdown-link {
+  color: rgb(255, 255, 255);
+  background-color: #D90000;
+}
+
+
+.ant-dropdown-link:hover {
+  color: #D90000;
+}
+
+.ant-dropdown-menu-item > a {
+  color: black;
+}
+
+.ant-dropdown-menu-item:hover > a {
+  color: #D90000;
+}
+
+/* Adjust padding for dropdown items */
+.ant-dropdown-menu-item {
+  padding: 5px 20px;
+}
+
+/* Style for the dropdown menu */
+.ant-dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+/* Mobile drawer styles */
+.ant-drawer.mobile-drawer .ant-drawer-content-wrapper {
+  width: 200px !important;
+}
+
+/* For even smaller screens */
+@media (max-width: 350px) {
+  .ant-drawer.mobile-drawer .ant-drawer-content-wrapper {
+    width: 180px !important;
+  }
+}
+
+.mobile-drawer .drawer-logo{
+  width: 200px;
+}

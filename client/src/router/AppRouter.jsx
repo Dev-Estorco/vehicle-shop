@@ -1,19 +1,41 @@
 import React from "react";
-import { Landing, VehicleDetails } from "../pages";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainOutlet from "../pages/MainOutLet";
+import { Landing, Home , VehicleDetailsPage} from "../pages";
+import { createBrowserRouter } from "react-router-dom";
+
+
+const Routes = [
+    {
+        path: "/",
+        element: <MainOutlet/>,
+        children: [
+            {
+                path: "/homepage",
+                element: <Home/>
+            },
+
+            {
+                path: "/landing",
+                element: <Landing/>
+            },
+
+            {
+                path: "/vehicle",
+                element: <Landing/>
+            },
+
+            {
+                path: "/vehicle-details",
+                element: <VehicleDetailsPage/>
+            },
+
+
+        ]
+    }
+]
 
 
 
-const AppRouter = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Landing/>}> </Route>
-                <Route path="/vehicle/:vehicleType/:id" element={<VehicleDetails/>}></Route>
-            </Routes>
-        </Router>
-    );
-}
-
+const AppRouter = createBrowserRouter(Routes);
 
 export default AppRouter;

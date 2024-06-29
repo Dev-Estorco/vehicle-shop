@@ -9,48 +9,48 @@ const VehicleSearchDropdown = ({
   selectedModel,
   selectedType,
 }) => {
-  const [models, setModels] = useState([]);
-  const [totalMatches, setTotalMatches] = useState(0);
+  // const [models, setModels] = useState([]);
+  // const [totalMatches, setTotalMatches] = useState(0);
 
-  const makes = ["All", ...new Set(vehicles.map((vehicle) => vehicle.make))];
-  const types = ["All", ...new Set(vehicles.map((vehicle) => vehicle.type))];
+  // const makes = ["All", ...new Set(vehicles.map((vehicle) => vehicle.make))];
+  // const types = ["All", ...new Set(vehicles.map((vehicle) => vehicle.type))];
 
-  useEffect(() => {
-    if (selectedMake === "All") {
-      setModels(["All"]);
-      setTotalMatches(vehicles.length);
-    } else {
-      const filteredModels = [
-        "All",
-        ...new Set(
-          vehicles
-            .filter((vehicle) => vehicle.make === selectedMake)
-            .map((vehicle) => vehicle.model)
-        ),
-      ];
-      setModels(filteredModels);
-      setTotalMatches(
-        vehicles.filter((vehicle) => vehicle.make === selectedMake).length
-      );
-    }
-  }, [selectedMake, vehicles]);
+  // useEffect(() => {
+  //   if (selectedMake === "All") {
+  //     setModels(["All"]);
+  //     setTotalMatches(vehicles.length);
+  //   } else {
+  //     const filteredModels = [
+  //       "All",
+  //       ...new Set(
+  //         vehicles
+  //           .filter((vehicle) => vehicle.make === selectedMake)
+  //           .map((vehicle) => vehicle.model)
+  //       ),
+  //     ];
+  //     setModels(filteredModels);
+  //     setTotalMatches(
+  //       vehicles.filter((vehicle) => vehicle.make === selectedMake).length
+  //     );
+  //   }
+  // }, [selectedMake, vehicles]);
 
-  useEffect(() => {
-    if (selectedModel === "All") {
-      setTotalMatches(
-        selectedMake === "All"
-          ? vehicles.length
-          : vehicles.filter((vehicle) => vehicle.make === selectedMake).length
-      );
-    } else {
-      setTotalMatches(
-        vehicles.filter(
-          (vehicle) =>
-            vehicle.make === selectedMake && vehicle.model === selectedModel
-        ).length
-      );
-    }
-  }, [selectedModel, selectedMake, selectedType, vehicles]);
+  // useEffect(() => {
+  //   if (selectedModel === "All") {
+  //     setTotalMatches(
+  //       selectedMake === "All"
+  //         ? vehicles.length
+  //         : vehicles.filter((vehicle) => vehicle.make === selectedMake).length
+  //     );
+  //   } else {
+  //     setTotalMatches(
+  //       vehicles.filter(
+  //         (vehicle) =>
+  //           vehicle.make === selectedMake && vehicle.model === selectedModel
+  //       ).length
+  //     );
+  //   }
+  // }, [selectedModel, selectedMake, selectedType, vehicles]);
 
   return (
     <div className="vehicle-search-dropdown">
@@ -59,7 +59,7 @@ const VehicleSearchDropdown = ({
         <div className="search-column">
           <label>Types</label>
           <div className="select-wrapper">
-            <select
+            {/* <select
               value={selectedType}
               onChange={(e) =>
                 onSearch(selectedMake, selectedModel, e.target.value)
@@ -73,13 +73,13 @@ const VehicleSearchDropdown = ({
                     {type}
                   </option>
                 ))}
-            </select>
+            </select> */}
           </div>
         </div>
         <div className="search-column">
           <label>Makes</label>
           <div className="select-wrapper">
-            <select
+            {/* <select
               value={selectedMake}
               onChange={(e) => onSearch(e.target.value, "All", selectedType)}
             >
@@ -91,13 +91,13 @@ const VehicleSearchDropdown = ({
                     {make}
                   </option>
                 ))}
-            </select>
+            </select> */}
           </div>
         </div>
         <div className="search-column">
           <label>Models</label>
           <div className="select-wrapper">
-            <select
+            {/* <select
               value={selectedModel}
               onChange={(e) =>
                 onSearch(selectedMake, e.target.value, selectedType)
@@ -111,11 +111,13 @@ const VehicleSearchDropdown = ({
                     {model}
                   </option>
                 ))}
-            </select>
+            </select> */}
           </div>
         </div>
         <div className="search-column total-matches">
-          <span>Total Matches: {totalMatches}</span>
+          <span>Total Matches: 1000</span>
+          {/* <span>Total Matches: {totalMatches}</span> */}
+
         </div>
       </div>
     </div>
