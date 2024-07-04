@@ -88,7 +88,7 @@ const NavigationComponent = ({onVehicleTypeChange}) => {
               </Link>
               <Link to="/used-motorcycles" className="dropdown-link">
                 Used Motorcycles
-              </Link>
+              </Link> 
               <Link to="/sport-motorcycles" className="dropdown-link">
                 Sport Motorcycles
               </Link>

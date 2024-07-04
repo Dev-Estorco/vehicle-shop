@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { allCars, allMotorcycles } from "../staticData/vehicleData";
 import NavigationComponent from "./layout/NavigationComponent";
 import ImageSlider from "./ImageSlider";
-import '../styles/vehicle-details.css'
+// import '../styles/vehicle-details.css'
 import jeep from "../assets/images/cars/jeep.jpg";
 
 

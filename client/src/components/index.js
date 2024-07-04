@@ -5,6 +5,8 @@ import MainLayout from "./layout/MainLayout";
 import HomePage from "./HomePage";
 import VehicleDetailsComponent from "./VehicleDetailsComponent";
 
+import FooterComponent from "./layout/FooterComponent";
+
 
 
 export { 
@@ -12,7 +14,8 @@ export {
     HomePage,
     VehicleDetailsComponent,
 
-
     LandingPageComponent,
-    VehicleDetailsPage
+    VehicleDetailsPage,
+
+    FooterComponent
 }

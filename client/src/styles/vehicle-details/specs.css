@@ -1,0 +1,44 @@
+.specs-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.specs-content .key-spec {
+    margin-top: 0px;
+}
+
+
+.key-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.spec-card {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 150px;
+    text-align: center;
+    background: #fef0f0;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.basic-specs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.basic-specs td {
+    padding: 8px;
+    border: 1px solid #e8e8e8;
+}
+
+.basic-specs td:first-child {
+    font-weight: bold;
+    background: #f5f5f5;
+}

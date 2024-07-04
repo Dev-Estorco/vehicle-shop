@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NavigationComponent from "./layout/NavigationComponent";
 import CarCard from "./VehicleCard";
-import Pagination from "./Pagination";
+import PaginationComponent from "./homepage/PaginationComponent";
 import "../../src/styles/landing-page/landing-page.css";
 
 import FooterComponent from "./layout/FooterComponent";
@@ -96,7 +96,7 @@ function LandingPageComponent() {
             ))}
           </div>
 
-          <Pagination
+          <PaginationComponent
             currentPage={currentPage}
             totalPages={totalPages}
             onPageChange={handleClick}

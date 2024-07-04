@@ -81,7 +81,7 @@ export const allCars = [
     monthlyPrice: 550,
     image: fordTruck,
   },
-  
+
   // {
   //   id: 7,
   //   make: "Mercedez-Benz",
